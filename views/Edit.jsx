@@ -6,7 +6,7 @@ class Edit extends React.Component {
         const {student} = this.props;
         return (
             <Layout>
-                <div className="container">
+                <div className="d-flex flex-column align-items-center">
                     <h1>{student.nameFirst} {student.nameLast}</h1>
                     <h2>Edit</h2>
                     <form action={`/students/edit/${student._id}?_method=PUT`} method="POST">
