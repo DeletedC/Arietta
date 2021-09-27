@@ -6,7 +6,7 @@ class Card extends React.Component {
         const {student} = this.props;
 
         return (
-            <div className="col-md-3 col-sm-6 text-center mb-3 mt-3">
+            <div className="col-lg-3 col-md-6 text-center mb-3 mt-3">
                     <a href={`/students/${student._id}`}>
                         <h3 className="text-truncate">{student.nameLast},</h3>
                         <h3 className="text-truncate">{student.nameFirst}</h3>
