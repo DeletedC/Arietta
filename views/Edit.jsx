@@ -7,11 +7,19 @@ class Edit extends React.Component {
         const {student} = this.props;
         return (
             <Layout>
-                <div className="d-flex flex-column align-items-center">
+                <div className="container d-flex flex-column align-items-center">
                     <h1>Edit</h1>
                     <h2>{student.nameFirst} {student.nameLast}</h2>
-                    <img className="img" src={student.img}/>
-                    <Form action={`/students/edit/${student._id}?_method=PUT`} method="POST" student={student} deletable={true}/>
+                    <div className="row">
+                        <div className="col-6">
+                            <img className="img-fluid" src={student.img}/>
+                        </div>
+                        <div className="col-6">
+                            <Form action={`/students/edit/${student._id}?_method=PUT`} method="POST" student={student} deletable={true}/>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </Layout>
         );
