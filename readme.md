@@ -15,6 +15,6 @@ There is also note saving functionality.
 * Deployed to Heroku
 
 ### Photo Credits
-Header: https://pixabay.com/photos/piano-oldschool-vintage-music-3717165/
+Header: https://pixabay.com/photos/piano-oldschool-vintage-music-3717165/  
 Background: https://www.vecteezy.com/free-vector/music-pattern
 
