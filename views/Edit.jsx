@@ -7,8 +7,9 @@ class Edit extends React.Component {
         return (
             <Layout>
                 <div className="d-flex flex-column align-items-center">
-                    <h1>{student.nameFirst} {student.nameLast}</h1>
                     <h2>Edit</h2>
+                    <h1>{student.nameFirst} {student.nameLast}</h1>
+                    <img className="img" src={student.img}/>
                     <form action={`/students/edit/${student._id}?_method=PUT`} method="POST">
                         First Name: <input type="text" name="nameFirst" value={student.nameFirst}/><br/>
                         Last Name: <input type="text" name="nameLast" value={student.nameLast}/><br/>
