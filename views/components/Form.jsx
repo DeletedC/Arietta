@@ -61,6 +61,11 @@ class Form extends React.Component {
                     <input className="btn btn-outline-success btn-lg" type="submit" value="Submit"/>
                 </form>
 
+            
+                <form action={`/students`} method="get">
+                    <input className="btn btn-outline-secondary btn-lg" type="submit" value="Cancel"/>
+                </form>
+
                 {/* Shows the Delete button on the Edit page only */}
                 {deletable?
                     <form action={`/students/${student._id}?_method=DELETE`} method="post">
