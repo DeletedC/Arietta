@@ -29,11 +29,11 @@ class Form extends React.Component {
                     <div className="form-row">
                         <div className="form-group col">
                             {deletable? <label for="nameFirst">First Name</label> : ""}
-                            <input type="text" className="form-control" name="nameFirst" value={student.nameFirst} placeholder="First Name"/>
+                            <input type="text" className="form-control" name="nameFirst" value={student.nameFirst} placeholder="First Name" required="true" />
                         </div>
                         <div className="form-group col">
                             {deletable? <label for="nameLast">Last Name</label> : ""}
-                            <input type="text" className="form-control" name="nameLast" value={student.nameLast} placeholder="Last Name"/>
+                            <input type="text" className="form-control" name="nameLast" value={student.nameLast} placeholder="Last Name" required="true" />
                         </div>
                     </div>
                     <div className="row">
