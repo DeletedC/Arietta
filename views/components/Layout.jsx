@@ -25,7 +25,9 @@ class Layout extends React.Component {
                 <body>
                     <div className="d-flex flex-column min-vh-100">
                         <Banner/>
-                        {this.props.children}
+                        <div className="main">
+                            {this.props.children}
+                        </div>
                         <Footer/>
                     </div>
                 </body>
