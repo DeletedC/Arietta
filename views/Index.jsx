@@ -31,7 +31,7 @@ class Index extends React.Component {
                 {connected
                     ? students.map((student, index) => {
                         return (
-                            <Card student={student}/>
+                            <Card key={index} student={student}/>
                         );
                     })
 
