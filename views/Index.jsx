@@ -25,9 +25,9 @@ class Index extends React.Component {
         return (
             <Layout>
                 <nav className="nav justify-content-center p-3 sticky-top">
-                    <a className="nav-item nav-link" href="/students" role="button">Home</a>
+                    <a className="nav-item nav-link mx-3" href="/students" role="button"><h2>Home</h2></a>
                     {connected
-                        ? <a className="nav-item nav-link" href="/students/new" role="button">New Student</a>
+                        ? <a className="nav-item nav-link mx-3" href="/students/new" role="button"><h2>New Student</h2></a>
                         : ''
                     }
                 </nav>

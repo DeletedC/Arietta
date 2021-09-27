@@ -10,7 +10,7 @@ body {
 .jumbotron {
     font-family: 'Chivo', sans-serif;
     font-style: italic;
-    color: rgb(189, 189, 189);
+    color: rgb(225, 225, 225);
     background-image: url("../img/piano-3717165_1920.jpg");
     background-size: cover;
 }
