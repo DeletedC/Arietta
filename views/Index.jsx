@@ -1,7 +1,7 @@
 const React = require('react');
 const Layout = require('./components/Layout.jsx');
 const Card = require('./components/Card');
-import {isDatabaseConnected} from '../public/js/check'
+import {isDatabaseConnected} from '../public/js/check';
 
 class Index extends React.Component {
     render() {
@@ -24,16 +24,10 @@ class Index extends React.Component {
 
         return (
             <Layout>
-                <nav className="nav justify-content-center p-3 sticky-top">
-                    <a className="nav-item nav-link" href="/students" role="button">Home</a>
-                    {connected
-                        ? <a className="nav-item nav-link" href="/students/new" role="button">New Student</a>
-                        : ''
-                    }
-                </nav>
+                
 
                 <div className="container">
-                <div className="row">
+                <div className="row d-flex justify-content-center">
                 {connected
                     ? students.map((student, index) => {
                         return (
