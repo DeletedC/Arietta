@@ -15,10 +15,10 @@ class Card extends React.Component {
          
                 <div className="row justify-content-center">
                     <form action={`/students/edit/${student._id}`} method="get">
-                        <input className="btn btn-outline-secondary" type="submit" value="Edit"/>
+                        <input className="btn btn-outline-secondary btn-lg" type="submit" value="Edit"/>
                     </form>
                     <form action={`/students/${student._id}?_method=DELETE`} method="post">
-                        <input className="btn btn-outline-danger" type="submit" value="Delete"/>
+                        <input className="btn btn-outline-danger btn-lg" type="submit" value="Delete"/>
                     </form>
                 </div>
             </div>

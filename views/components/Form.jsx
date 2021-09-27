@@ -58,13 +58,13 @@ class Form extends React.Component {
                             <textarea rows="3" className="form-control" name="notes" value={student.notes} placeholder="Notes"/>
                         </div>
                     </div>
-                    <input className="btn btn-outline-success" type="submit" value="Submit"/>
+                    <input className="btn btn-outline-success btn-lg" type="submit" value="Submit"/>
                 </form>
 
                 {/* Shows the Delete button on the Edit page only */}
                 {deletable?
                     <form action={`/students/${student._id}?_method=DELETE`} method="post">
-                        <input className="btn btn-outline-danger" type="submit" value="Delete"/>
+                        <input className="btn btn-outline-danger btn-lg" type="submit" value="Delete"/>
                     </form>
                 : ""}
             </div>
