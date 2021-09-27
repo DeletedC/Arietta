@@ -5,10 +5,6 @@ class New extends React.Component {
     render() {
         return (
             <Layout>
-                <nav className="nav justify-content-center">
-                    <a className="nav-item nav-link" href="/students" role="button">Home</a>
-                    <a className="nav-item nav-link" href="/students/new" role="button">New Student</a>
-                </nav>
                 <div className="container">
                     <div className="row justify-content-center">
                         <h1>New Student Form</h1>

@@ -6,10 +6,6 @@ class Edit extends React.Component {
         const {student} = this.props;
         return (
             <Layout>
-                <nav className="nav justify-content-center">
-                    <a className="nav-item nav-link" href="/students" role="button">Home</a>
-                    <a className="nav-item nav-link" href="/students/new" role="button">New Student</a>
-                </nav>
                 <div className="container">
                     <h1>{student.nameFirst} {student.nameLast}</h1>
                     <h2>Edit</h2>

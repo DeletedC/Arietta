@@ -1,5 +1,6 @@
 const React= require('react');
 const Banner = require('./Banner');
+const NavBar = require('./NavBar');
 const Footer = require('./Footer');
 
 class Layout extends React.Component {
@@ -25,6 +26,7 @@ class Layout extends React.Component {
                 <body>
                     <div className="d-flex flex-column min-vh-100">
                         <Banner/>
+                        <NavBar />
                         <div className="main">
                             {this.props.children}
                         </div>
