@@ -7,9 +7,9 @@ class Card extends React.Component {
 
         return (
             <div className="col-lg-3 col-md-6 text-center mb-3 mt-3">
-                    <a href={`/students/${student._id}`}>
-                        <h3 className="text-truncate">{student.nameLast},</h3>
-                        <h3 className="text-truncate">{student.nameFirst}</h3>
+                    <a href={`/students/${student._id}`} className="text-dark">
+                        <p className="h4 text-truncate">{student.nameLast},</p>
+                        <p className="h4 text-truncate">{student.nameFirst}</p>
                     <img className="card-img-top img-thumbnail" src={student.img}></img>
                     </a>
          
