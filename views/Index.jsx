@@ -33,7 +33,7 @@ class Index extends React.Component {
                 </nav>
 
                 <div className="container">
-                <div className="row">
+                <div className="row d-flex justify-content-center">
                 {connected
                     ? students.map((student, index) => {
                         return (
