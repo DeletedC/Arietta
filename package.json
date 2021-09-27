@@ -2,9 +2,9 @@
   "engines": {
     "node": "13.13.0"
   },
-  "name": "project_2",
-  "version": "1.0.0",
-  "description": "",
+  "name": "arietta",
+  "version": "2.5.0",
+  "description": "Arietta, student roster app by Curtis Woods",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "dev": "nodemon"
   },
   "keywords": [],
-  "author": "",
+  "author": "Curtis Woods",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
