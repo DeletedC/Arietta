@@ -32,7 +32,7 @@ app.engine('jsx', require('express-react-views').createEngine());
 //___________________
 
 // How to connect to the database either via heroku or locally
-// const MONGODB_URI = env.MONGODB_URI || 'mongodb://localhost/project2';
+const MONGODB_URI = env.MONGODB_URI || 'mongodb://localhost/project2';
 const MONGODB_URI = 'mongodb://localhost/project2';
 
 // Connect to Mongo
