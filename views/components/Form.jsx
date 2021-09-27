@@ -25,37 +25,37 @@ class Form extends React.Component {
             // Placeholder text will be used on the New page
             // Looks better and more descriptive this way
             <div>
-                <form action={this.props.action} method={this.props.method}>
+                <form action={this.props.action} method={this.props.method} className="h3">
                     <div className="form-row">
                         <div className="form-group col">
-                            {deletable? <label for="nameFirst">First Name</label> : ""}
-                            <input type="text" className="form-control" name="nameFirst" defaultValue={student.nameFirst} placeholder="First Name" required={true} />
+                            {deletable? <label htmlFor="nameFirst">First Name</label> : ""}
+                            <input type="text" className="form-control-lg w-100" name="nameFirst" defaultValue={student.nameFirst} placeholder="First Name" required={true} />
                         </div>
                         <div className="form-group col">
-                            {deletable? <label for="nameLast">Last Name</label> : ""}
-                            <input type="text" className="form-control" name="nameLast" defaultValue={student.nameLast} placeholder="Last Name" required={true} />
+                            {deletable? <label htmlFor="nameLast">Last Name</label> : ""}
+                            <input type="text" className="form-control-lg w-100" name="nameLast" defaultValue={student.nameLast} placeholder="Last Name" required={true} />
                         </div>
                     </div>
                     <div className="row">
                         <div className="form-group col">
-                            {deletable? <label for="img">Picture URL</label> : ""}
-                            <input type="text" className="form-control" name="img" defaultValue={student.img} placeholder="Picture URL"/>
+                            {deletable? <label htmlFor="img">Picture URL</label> : ""}
+                            <input type="text" className="form-control-lg w-100" name="img" defaultValue={student.img} placeholder="Picture URL"/>
                         </div>
                     </div>
                     <div className="form-row">
                         <div className="form-group col">
-                            {deletable? <label for="book">Book</label> : ""}
-                            <input type="text" className="form-control" name="book" defaultValue={student.book} placeholder="Book"/>
+                            {deletable? <label htmlFor="book">Book</label> : ""}
+                            <input type="text" className="form-control-lg w-100" name="book" defaultValue={student.book} placeholder="Book"/>
                         </div>
                         <div className="form-group col">
-                            {deletable? <label for="level">Level</label> : ""}
-                            <input type="text" className="form-control" name="level" defaultValue={student.level} placeholder="Level"/>
+                            {deletable? <label htmlFor="level">Level</label> : ""}
+                            <input type="text" className="form-control-lg w-100" name="level" defaultValue={student.level} placeholder="Level"/>
                         </div>
                     </div>
                     <div className="row">
                         <div className="form-group col">
-                            {deletable? <label for="notes">Notes</label> : ""}
-                            <textarea rows="3" className="form-control" name="notes" defaultValue={student.notes} placeholder="Notes"/>
+                            {deletable? <label htmlFor="notes">Notes</label> : ""}
+                            <textarea className="form-control-lg w-100" name="notes" defaultValue={student.notes} placeholder="Notes"/>
                         </div>
                     </div>
                     <input className="btn btn-outline-success btn-lg" type="submit" value="Submit"/>

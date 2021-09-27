@@ -9,6 +9,11 @@ body {
     font-weight: 700;
 }
 
+textarea {
+    min-width: 100%;
+    min-height: 12rem;
+}
+
 .jumbotron {
     font-family: 'Merienda', 'sans-serif';
     font-style: italic;
