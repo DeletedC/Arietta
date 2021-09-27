@@ -23,9 +23,11 @@ class Layout extends React.Component {
                     <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet"/> 
                 </head>
                 <body>
-                    <Banner/>
-                    {this.props.children}
-                    <Footer/>
+                    <div className="d-flex flex-column min-vh-100">
+                        <Banner/>
+                        {this.props.children}
+                        <Footer/>
+                    </div>
                 </body>
             </html>
         );

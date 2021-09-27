@@ -3,7 +3,7 @@ const React= require('react');
 class Footer extends React.Component {
     render() {
         return (
-            <div className="container-fluid footer pt-5">
+            <div className="container-fluid flex-grow-1 footer pt-5">
                 <div className="row justify-content-center">
                     <p>Site by Curtis Woods</p>
                 </div>
