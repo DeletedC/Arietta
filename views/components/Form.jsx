@@ -25,7 +25,7 @@ class Form extends React.Component {
             // Placeholder text will be used on the New page
             // Looks better and more descriptive this way
             <div>
-                <form action={this.props.action} method={this.props.method} className="h3">
+                <form action={this.props.action} method={this.props.method} className="h5">
                     <div className="form-row">
                         <div className="form-group col-sm-6">
                             {deletable? <label htmlFor="nameFirst">First Name</label> : ""}
@@ -43,11 +43,11 @@ class Form extends React.Component {
                         </div>
                     </div>
                     <div className="form-row">
-                        <div className="form-group col">
+                        <div className="form-group col-8">
                             {deletable? <label htmlFor="book">Book</label> : ""}
                             <input type="text" className="form-control-lg w-100" name="book" defaultValue={student.book} placeholder="Book"/>
                         </div>
-                        <div className="form-group col">
+                        <div className="form-group col-4">
                             {deletable? <label htmlFor="level">Level</label> : ""}
                             <input type="text" className="form-control-lg w-100" name="level" defaultValue={student.level} placeholder="Level"/>
                         </div>
@@ -58,7 +58,7 @@ class Form extends React.Component {
                             <textarea className="form-control-lg w-100" name="notes" defaultValue={student.notes} placeholder="Notes"/>
                         </div>
                     </div>
-                    <input className="btn btn-outline-success btn-lg" type="submit" value="Submit"/>
+                    <input className="btn btn-success btn-lg" type="submit" value="Submit"/>
                 </form>
 
             
