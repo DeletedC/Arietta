@@ -9,9 +9,9 @@ class NavBar extends React.Component {
 
         return (
             <nav className="nav d-flex justify-content-center p-3 sticky-top">
-                <a className="nav-item nav-link mx-2 h5" href="/students" role="button">Home</a>
+                <a className="nav-item nav-link mx-2 text-white h5" href="/students" role="button">Home</a>
                 {connected
-                    ? <a className="nav-item nav-link mx-2 h5" href="/students/new" role="button">New Student</a>
+                    ? <a className="nav-item nav-link mx-2 text-white h5" href="/students/new" role="button">New Student</a>
                     : ''
                 }
             </nav>

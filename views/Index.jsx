@@ -29,7 +29,7 @@ class Index extends React.Component {
                 <div className="container">
                     <div className="row d-flex flex-column align-items-center">
                         <div className="col d-flex align-items-center">
-                           <h2 className="h1 mx-auto">All Students</h2> 
+                           <h2 className="display-4 mx-auto">All Students</h2> 
                         </div>
                         <div className="row justify-content-center">
                             {connected
