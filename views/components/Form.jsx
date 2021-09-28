@@ -1,4 +1,5 @@
 const React = require('react');
+const ModalToDelete = require('./ModalToDelete');
 
 class Form extends React.Component {
     render() {
@@ -68,10 +69,13 @@ class Form extends React.Component {
 
                 {/* Shows the Delete button on the Edit page only */}
                 {deletable?
-                    <form action={`/students/${student._id}?_method=DELETE`} method="post">
-                        <input className="btn btn-outline-danger btn-lg" type="submit" value="Delete"/>
-                    </form>
+                    <button type="button" className="btn btn-outline-danger btn-lg" data-toggle="modal" data-target="#modalDelete">
+                    Delete
+                    </button>
                 : ""}
+
+                {/* Modal with warning */}
+                <ModalToDelete student={student} />
             </div>
             
         );
