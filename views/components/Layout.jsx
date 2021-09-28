@@ -14,7 +14,7 @@ class Layout extends React.Component {
                     {/* meta tags for LinkedIn */}
                     <meta property="og:title" content="Arietta"/>
                     <meta property="og:image" content="https://curtiswoods.herokuapp.com/img/Screenshot_Arietta_New.jpg"/>
-                    <meta property="og:description" content="Arietta, Studio Roster App by Curtis Woods"/>
+                    <meta name="description" property="og:description" content="Arietta, Studio Roster App by Curtis Woods"/>
                     <meta property="og:url" content="//curtiswoods.herokuapp.com/students"/>
 
                     {/* Bootstrap */}

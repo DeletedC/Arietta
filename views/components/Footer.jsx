@@ -11,11 +11,11 @@ class Footer extends React.Component {
                         rel="noopener noreferrer">
                         <h3>See my portfolio</h3>
                     </a>
-                    <p className="mb-0">Music Pattern Vectors by <a href="https://www.vecteezy.com/free-vector/music-pattern" 
+                    <p className="mb-0 font-weight-normal">Music Pattern Vectors by <a className="h5" href="https://www.vecteezy.com/free-vector/music-pattern" 
                         target="_blank" 
                         rel="noopener noreferrer">Vecteezy</a>
                     </p>
-                    <p>Header background from <a href="https://pixabay.com/photos/piano-oldschool-vintage-music-3717165/"
+                    <p className="font-weight-normal">Header background from <a className="h5" href="https://pixabay.com/photos/piano-oldschool-vintage-music-3717165/"
                         target="_blank"
                         rel="noopener noreferrer">Pixabay</a>.
                     </p>
