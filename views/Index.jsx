@@ -27,20 +27,26 @@ class Index extends React.Component {
                 
 
                 <div className="container">
-                <div className="row d-flex justify-content-center">
-                {connected
-                    ? students.map((student, index) => {
-                        return (
-                            <Card key={index} student={student}/>
-                        );
-                    })
+                    <div className="row d-flex flex-column align-items-center">
+                        <div className="col d-flex align-items-center">
+                           <h2 className="h1 mx-auto">All Students</h2> 
+                        </div>
+                        <div className="row justify-content-center">
+                            {connected
+                            ? students.map((student, index) => {
+                                return (
+                                    <Card key={index} student={student}/>
+                                );
+                            })
 
-                    : 
-                    <div className="col mt-5 text-center">
-                        <h3>The database is not connected. Please try again later.</h3>
-                    </div>  
-                }
-                </div>
+                            : 
+                            <div className="col mt-5 text-center">
+                                <h3>The database is not connected. Please try again later.</h3>
+                            </div>  
+                        }
+                        </div>
+                        
+                    </div>
                 </div>   
             </Layout>
         );
