@@ -12,7 +12,7 @@ class Edit extends React.Component {
                     <h2 className="pb-4 font-weight-bold">{student.nameFirst} {student.nameLast}</h2>
                     <div className="row">
                         <div className="col-md-6">
-                            <img className="img-fluid" src={student.img}/>
+                            <img className="img-fluid" src={student.img} alt={`Picture of ${student.nameFirst} ${student.nameLast}`}/>
                         </div>
                         <div className="col-md-6">
                             <Form action={`/students/edit/${student._id}?_method=PUT`} method="POST" student={student} deletable={true}/>

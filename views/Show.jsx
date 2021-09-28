@@ -11,7 +11,7 @@ class Show extends React.Component {
                     <h1 className="pb-4 font-weight-bold">{student.nameFirst} {student.nameLast}</h1>
                     <div className="row">
                         <div className="col-md-6">
-                            <img className="img-fluid pb-3" src={student.img}/> 
+                            <img className="img-fluid pb-3" src={student.img} alt={`Picture of ${student.nameFirst} ${student.nameLast}`}/> 
                         </div>
                         <div className="col-md-6 pl-md-5">
                             <p className="h2 font-weight-bold">Book: <span className="font-weight-normal">{student.book}</span></p>
