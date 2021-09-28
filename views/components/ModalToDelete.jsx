@@ -7,7 +7,7 @@ class ModalToDelete extends React.Component {
 
         return (
             <div className="modal fade" id="modalDelete" tabIndex="-1" aria-labelledby="modalDeleteLabel" aria-hidden="true">
-                <div className="modal-dialog">
+                <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title font-weight-bold" id="modalDeleteLabel">DELETE {student.nameFirst} {student.nameLast}</h5>
