@@ -8,10 +8,10 @@ class New extends React.Component {
             <Layout>
                 <div className="container">
                     <div className="row justify-content-center px-2 pb-3">
-                        <h1>New Student Form</h1>
+                        <h1 className="text-center">New Student Form</h1>
                     </div>
                     <div className="row">
-                        <div className="col d-flex flex-column align-items-center">
+                        <div className="col text-center font-weight-normal">
                             <p>At least a first and last name are required.</p>
                             <p>Some sites may not allow hotlinking images.</p>
                         </div>
