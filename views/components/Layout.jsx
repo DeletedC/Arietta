@@ -13,8 +13,8 @@ class Layout extends React.Component {
 
                     {/* meta tags for LinkedIn */}
                     <meta property="og:title" content="Arietta"/>
-                    <meta property="og:image" content="https://curtiswoods.herokuapp.com/img/screenshot.png"/>
-                    <meta property="og:description" content="Arietta, Studio Roster App"/>
+                    <meta property="og:image" content="https://curtiswoods.herokuapp.com/img/Screenshot_Arietta_New.jpg"/>
+                    <meta property="og:description" content="Arietta, Studio Roster App by Curtis Woods"/>
                     <meta property="og:url" content="//curtiswoods.herokuapp.com/students"/>
 
                     {/* Bootstrap */}
@@ -37,9 +37,7 @@ class Layout extends React.Component {
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
                     
-                    <title>Student Tracker</title>
-
-                    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet"/> 
+                    <title>Arietta</title>
                 </head>
                 <body>
                     <div className="d-flex flex-column min-vh-100">
