@@ -7,10 +7,10 @@ class New extends React.Component {
         return (
             <Layout>
                 <div className="container">
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center px-2">
                         <h1>New Student Form</h1>
                     </div>
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center px-3">
                         <Form action="/students" method="POST" student={null} deletable={false}/>
                     </div>
 
