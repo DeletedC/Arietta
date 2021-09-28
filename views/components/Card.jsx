@@ -11,7 +11,7 @@ class Card extends React.Component {
                     <a href={`/students/${student._id}`} className="text-dark">
                         <p className="h3 text-truncate">{student.nameLast},</p>
                         <p className="h3 text-truncate">{student.nameFirst}</p>
-                    <img className="card-img-top img-thumbnail" src={student.img}></img>
+                    <img className="card-img-top img-thumbnail" src={student.img} alt={`Picture of ${student.nameFirst} ${student.nameLast}`}></img>
                     </a>
          
                 <div className="row justify-content-center">
