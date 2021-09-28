@@ -27,11 +27,11 @@ class Form extends React.Component {
             <div>
                 <form action={this.props.action} method={this.props.method} className="h3">
                     <div className="form-row">
-                        <div className="form-group col">
+                        <div className="form-group col-sm-6">
                             {deletable? <label htmlFor="nameFirst">First Name</label> : ""}
                             <input type="text" className="form-control-lg w-100" name="nameFirst" defaultValue={student.nameFirst} placeholder="First Name" required={true} />
                         </div>
-                        <div className="form-group col">
+                        <div className="form-group col-sm-6">
                             {deletable? <label htmlFor="nameLast">Last Name</label> : ""}
                             <input type="text" className="form-control-lg w-100" name="nameLast" defaultValue={student.nameLast} placeholder="Last Name" required={true} />
                         </div>
