@@ -18,13 +18,16 @@ class Card extends React.Component {
                     <form action={`/students/edit/${student._id}`} method="get">
                         <input className="btn btn-outline-secondary btn-lg px-5" type="submit" value="Edit"/>
                     </form>
-                    <form >
+
+                    {/* Disabled Delete button. Needs a fix for the modal */}
+                    {/* <form >
                         <input className="btn btn-outline-danger btn-lg" type="button" value="Delete" data-toggle="modal" data-target="#modalDelete"/>
-                    </form>
+                    </form> */}
                 </div>
 
+                {/* DISABLED UNTIL DELETE BUTTON ABOVE IS FIXED */}
                 {/* Modal with warning */}
-                <ModalToDelete student={student} />
+                {/* <ModalToDelete student={student} /> */}
             </div>
         );
     };
