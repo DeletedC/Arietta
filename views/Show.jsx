@@ -1,5 +1,6 @@
 const React = require('react');
 const Layout = require('./components/Layout.jsx');
+const ModalToDelete = require('./components/ModalToDelete');
 
 class Show extends React.Component {
     render() {
@@ -20,12 +21,14 @@ class Show extends React.Component {
                             <form action={`/students/edit/${student._id}`} method="get">
                                 <input className="btn btn-outline-secondary btn-lg" type="submit" value="Edit"/>
                             </form>
-                            <form action={`/students/${student._id}?_method=DELETE`} method="post">
-                                <input className="btn btn-outline-danger btn-lg" type="submit" value="Delete"/>
+                            <form >
+                                <input className="btn btn-outline-danger btn-lg" type="button" value="Delete" data-toggle="modal" data-target="#modalDelete"/>
                             </form>
                         </div>
                     </div>
                     
+                    {/* Modal with warning */}
+                    <ModalToDelete student={student} />
                     
                 </div>
             </Layout>

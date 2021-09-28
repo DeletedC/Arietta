@@ -3,7 +3,7 @@ const React = require('react');
 class ModalToDelete extends React.Component {
     render() {
 
-        const student = this.props.student;
+        const {student} = this.props;
 
         return (
             <div className="modal fade" id="modalDelete" tabIndex="-1" aria-labelledby="modalDeleteLabel" aria-hidden="true">
