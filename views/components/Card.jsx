@@ -6,12 +6,15 @@ class Card extends React.Component {
 
         const {student} = this.props;
 
+        // When no image is specified by the user
+        const blank = "../img/NoImage.jpeg" 
+
         return (
             <div className="col-6 col-lg-3 col-xl-2 text-center mb-3 mt-3">
                     <a href={`/students/${student._id}`} className="text-dark">
                         <p className="h3 text-truncate">{student.nameLast},</p>
                         <p className="h3 text-truncate">{student.nameFirst}</p>
-                    <img className="card-img-top img-thumbnail" src={student.img} alt={`Picture of ${student.nameFirst} ${student.nameLast}`}></img>
+                    <img className="card-img-top img-thumbnail" src={student.img || blank} alt={`Picture of ${student.nameFirst} ${student.nameLast}`}></img>
                     </a>
          
                 <div className="row justify-content-center">
