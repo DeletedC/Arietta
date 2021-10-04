@@ -31,7 +31,7 @@ class Index extends React.Component {
                         <div className="col d-flex align-items-center">
                            <h2 className="display-5 mx-auto mb-sm-5">All Students</h2> 
                         </div>
-                        <div className="row justify-content-center">
+                        <div className="row justify-content-center px-2 mx-auto">
                             {connected
                             ? students.map((student, index) => {
                                 return (
